@@ -1,0 +1,65 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    margin-top: 30px;
+    border-radius: 8px;
+  }
+  
+  .file-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .file-list li {
+    margin: 10px 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+  }
+  
+  .file-list a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .file-list a:hover {
+    text-decoration: underline;
+  }
+  
+  .upload-box input {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .file-content {
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    font-family: monospace;
+  }
+
+  .upload-box button {
+    padding: 8px 12px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .upload-box button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+      
+  
