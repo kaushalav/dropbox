@@ -5,9 +5,8 @@ export default function Home() {
   return (
     <div className="container">
       <div>
-        <h1>DropBox</h1>
+        <img src="https://static.cdnlogo.com/logos/d/36/dropbox-2017.svg" alt="dropbox" height="30px" width="150px" style={{marginBottom: '10px'}} />
       </div>
-
       <FileUpload />
       <FileList />
     </div>

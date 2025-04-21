@@ -33,7 +33,7 @@ export default function FileUpload() {
       fetchFiles();
       alert('Upload successful!');
       setSelectedFile(null);
-      inputRef.current.value = null; // reset input
+      inputRef.current.value = null;
     } catch (err) {
       alert('Upload failed.');
       console.error(err);

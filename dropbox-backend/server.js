@@ -15,7 +15,7 @@ app.use(cors({
 
 app.use(express.json());
 
-const mongoUri = config.MONGO_URI || 'mongodb://mongo:27017/dropbox';
+const mongoUri = config.MONGO_URI || 'mongodb://admin:secret@mongo:27017/dropbox?authSource=admin';
 
 // MongoDB connection
 mongoose.connect(mongoUri, {

@@ -17,11 +17,10 @@ export default function ViewFile() {
           const text = await res.text();
           setContent(text);
         } else {
-          // Open file in new tab and go back to home
           const blob = await res.blob();
           const url = URL.createObjectURL(blob);
           window.open(url, '_blank');
-          navigate('/'); // redirect to home to prevent second tab
+          navigate('/');
         }
       } catch (err) {
         console.error(err);

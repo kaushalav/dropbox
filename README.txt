@@ -26,16 +26,16 @@
     ## Run with Docker Compose
 
         - **Clone the repo**: git clone https://github.com/your-username/dropbox-app.git
-        - **Go to project directory**   cd "Dropbox App"
-
-    ## to build and start, run ->  docker-compose up --build
-    ## to stop and clean, run  ->  docker-compose down -v
-   
+        - **Go to project directory** - "cd Dropbox App"
+        - **To build and start the backend and mongo db** - "docker-compose up --build"
+        - **To start the frontend** - "npm run start"
+        - **To stop** -  "docker-compose down"
+    
     ## Access the app:
 
-        - Frontend: http://localhost:3000
+        - **Frontend:** http://localhost:3000
 
-        - Backend API: http://localhost:3001
+        - **Backend:** http://localhost:3001
 
 # Backend API Endpoints
   ---------------------------------------------------

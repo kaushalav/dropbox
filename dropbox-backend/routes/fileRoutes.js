@@ -9,10 +9,10 @@ router.post('/upload', upload.single('file'), fileController.uploadFile);
 // List all files
 router.get('/files', fileController.getFiles);
 
-// Download
+// To download file
 router.get('/download/:id', fileController.downloadFile);
 
-// Welcome/test route
+// Welcome /test route for testing purpose
 router.get('/welcome', (req, res) => {
   res.status(200).json({ message: 'Welcome to the site' });
 });
