@@ -18,7 +18,7 @@ export default function FileUpload() {
 
     const allowed = ['text/plain', 'image/png', 'image/jpeg', 'application/json', 'application/pdf'];
     if (!allowed.includes(selectedFile.type)) {
-      alert('Only txt, png, jpg, and json files are allowed!');
+      alert('Only txt, png, jpg, and json and pdf files are allowed!');
       return;
     }
 

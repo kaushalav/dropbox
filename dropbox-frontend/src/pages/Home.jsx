@@ -1,14 +1,19 @@
+import React, { useState } from "react";
 import FileUpload from "../components/FileUpload";
 import FileList from "../components/FileList";
+import TrashedFileList from "../components/TrashedFileList";
+import FeatureLogo from "../components/FeatureLogo";
+import ToggleList from "../components/ToggleList";
 
 export default function Home() {
+  const [showDeleted, setShowDeleted] = useState(false);
   return (
     <div className="container">
-      <div>
-        <img src="https://static.cdnlogo.com/logos/d/36/dropbox-2017.svg" alt="dropbox" height="30px" width="150px" style={{marginBottom: '10px'}} />
-      </div>
+      <FeatureLogo />
       <FileUpload />
-      <FileList />
+      <ToggleList showDeleted={showDeleted} setShowDeleted={setShowDeleted} />
+      {showDeleted && <TrashedFileList />}
+      {!showDeleted && <FileList />}
     </div>
   );
 }
