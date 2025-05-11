@@ -17,12 +17,14 @@ export default function TrashedFileList() {
       });
 
       if (!res.ok) {
+        alert('Failed to restore the file');
         console.log("Failed to restore the file");
       }
       await fetchFiles();
       await fetchTrashedFiles();
     } catch (error) {
-      console.error("Download failed:", error);
+      alert('Failed to restore the file');
+      console.error("Failed to restore the file:", error);
     }
   };
 
@@ -30,7 +32,7 @@ export default function TrashedFileList() {
     <>
       {trashedFiles.length === 0 ? (
         <div style={{ textAlign: "center", marginTop: "2rem" }}>
-          <h2>No trashed files found 🗑️</h2>
+          <h2>No trashed files found.</h2>
         </div>
       ) : (
         <ul className="file-list">

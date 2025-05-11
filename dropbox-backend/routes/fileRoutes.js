@@ -7,6 +7,8 @@ const upload = require('../middleware/upload');
 router.post('/upload', upload.single('file'), fileController.uploadFile);
 
 // List all files
+// ?isDeleted=true   will return all the trashed files
+// otherwise the list of files that are not deleted.
 router.get('/files', fileController.getFiles);
 
 // To download file

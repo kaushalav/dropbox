@@ -12,8 +12,7 @@ export default function Home() {
       <FeatureLogo />
       <FileUpload />
       <ToggleList showDeleted={showDeleted} setShowDeleted={setShowDeleted} />
-      {showDeleted && <TrashedFileList />}
-      {!showDeleted && <FileList />}
+      {showDeleted ? <TrashedFileList /> : <FileList />}
     </div>
   );
 }
